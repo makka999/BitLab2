@@ -41,16 +41,19 @@ string text, result, key;
 text = "jedna z najprostszych technik szyfrowania";
 key = "jedna";
 Console.WriteLine();
+Console.WriteLine("Baza:");
+
+Console.WriteLine("Text: " + text);
+Console.WriteLine("Klucz: " +  key);
 Console.WriteLine();
 
-Console.WriteLine(text);
-Console.WriteLine(key);
-Console.WriteLine();
+Console.WriteLine("Zaszyfrowany tekst:");
 result = Encrypt(text, alphabet, key, false);
 Console.WriteLine(result);
-Console.WriteLine();
 
 text = result;
+Console.WriteLine();
+Console.WriteLine("Test odszyfrowania:");
 result = Encrypt(text, alphabet, key, true);
 Console.WriteLine(result);
 
